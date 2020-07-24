@@ -1,0 +1,206 @@
+.wrap {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+/* header styles (頁首、輸入及送出按鈕) */
+.header {
+    background: #424242;
+    height: 300px;
+}
+.headerEl {
+    margin: 0 auto;
+    padding-top: 80px;
+    display: flex;
+}
+.BMIlogo {
+    width: 117px;
+    height: 117px;
+    padding-left: 170px;
+    padding-top: 10px;
+}
+.insert {
+    padding-left: 100px;
+}
+.text-bmi-yellow {
+    color: #FFD366;
+}
+.input-text {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #FFD366;
+    width: 220px;
+    font-size: 18px;
+    padding: 5px;
+    outline: none;
+}
+.input-text:focus {
+    box-shadow: 0px 0px 2px 1px #FFD366;
+}
+.result {
+    padding-left: 100px;
+    padding-top: 5px;
+}
+#send {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background: #FFD366;
+    border: none;
+    font-size: 25px;
+    color: #424242;
+    outline: none;
+    cursor: pointer;
+}
+#send:hover {
+    box-shadow: 0px 0px 5px 1px #FFD366;
+    font-weight: bold;
+}
+/* 點擊送出後按鈕變更樣式，呈現結果 */
+.newBtn {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: none;
+    font-size: 22px;
+    position: absolute;
+    box-sizing: border-box;
+}
+.bmiResult {
+    position: relative;
+    left: 20px;
+    top: 40px;
+    font-size: 30px;
+}
+.showJudge {
+    position: relative;
+    left: 140px;
+    top: 35px;
+    text-align: center;
+    font-size: 30px;
+}
+.BMI {
+    position: relative;
+    left: 52px;
+    top: 85px;
+    font-size: 16px;
+}
+.refreshBtn {
+    position: relative;
+    left: 95px;
+    top: 50px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.refreshBtn img {
+    padding-left: 3px;
+}
+
+/* Content styles (計算結果、紀錄區) */
+.content {
+    background: #F0F0F0;
+    text-align: center;
+    padding: 30px;
+}
+.content h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.content ul {
+    margin: 0 auto;
+    padding: 30px 30px;
+    width: 750px;
+}
+.content a {
+    text-decoration: none;
+}
+/* visited: a連結點擊後還是呈現藍色（未點擊時的樣式） */
+.content a:visited {
+    color: blue
+}
+.list li {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+}
+.color {
+    width: 7px;
+}
+.list li p {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    color: #424242;
+}
+.list li span {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #424242;
+}
+
+/* footer styles */
+.footer {
+    background: #FFD366;
+    display: flex;
+    justify-content: center;
+}
+
+.footer img {
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+}
+
+/* 結果顏色條設定 */
+
+/* 重度肥胖 */
+
+#color1 {
+    background: #FF1200;
+    box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
+}
+
+/* 中度肥胖 */
+
+#color2 {
+    background: #FF6C03;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+
+/* 輕度肥胖 */
+
+#color3 {
+    background: #FF6C03;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+
+/* 理想 */
+
+#color4 {
+    background: #FF982D;
+    box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+/* 過輕 */
+
+#color5 {
+    background: #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
+}
+
+/* 過瘦 */
+
+#color6 {
+    background: #31BAF9;
+    box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}

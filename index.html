@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" class="css">
+    <link rel="stylesheet" href="css/style.css" class="css">
+</head>
+
+<body style="background-image: url(https://imgur.com/jxYuuQA.png)">
+
+    <div class="wrap">
+
+        <div class="header">
+            <div class="headerEl">
+                <img class="BMIlogo" src="https://imgur.com/M8YqQxI.png" alt="logo">
+                <div class="insert">
+                    <label class="text-bmi-yellow label" for="userHeight">身高 (cm)</label><br>
+                    <input id="userHeight" type="text" class="text-bmi-yellow input-text" placeholder="請輸入身高">
+                    <br>
+                    <label class="text-bmi-yellow label" for="userWeight">體重 (kg)</label><br>
+                    <input id="userWeight" type="text" class="text-bmi-yellow input-text" placeholder="請輸入體重">
+                </div>
+                <div class="result">
+                    <button id="send" class="result-btn">看結果</button>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3 class="BMI-result">BMI紀錄</h3>
+            <ul class="list">
+            </ul>
+            <a href="#" id="h-clear">清除歷史紀錄</a>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <img src="https://imgur.com/mRXAC6M.png" alt="">
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
